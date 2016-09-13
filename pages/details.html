@@ -1,25 +1,28 @@
 
 <hr/>
-<div class="col-md-6">
-    <div class="well">
-        <h4>{{stockDataAll.dataset.name}}</h4>
-        <p>{{stockDataAll.dataset.description}}</p>
-    </div>
-<!--  High charts  -->
-    <div id="container">Placeholder for chart</div>
-</div>
-        
-</div>
-<div class="col-md-6">
-<table class="table">
-    <tr>
-        <th>Date</th>
-        <th>Stock Price</th>
-    </tr>
-    <tr ng-repeat="stock in stockDataAll.dataset.data">
-        
-        <td>{{ stock[0] }} </td>
-        <td>{{ stock[1] | currency }} </td>
-    </tr>
-</table>
+
+<div ng-cloak>
+  <div class="col-md-6">
+      <div class="well">
+          <h4>{{stockDataAll.dataset.name}}</h4>
+          <p>{{stockDataAll.dataset.description}}</p>
+      </div>
+  <!--  High charts  -->
+      <div id="container">Placeholder for chart</div>
+  </div>
+
+  </div>
+  <div class="col-md-6">
+  <table class="table">
+      <tr>
+          <th>Date</th>
+          <th>Stock Price</th>
+      </tr>
+      <tr ng-repeat="stock in stockDataAll.dataset.data">
+
+          <td>{{ stock[0] }} </td>
+          <td>{{ stock[1] | currency }} </td>
+      </tr>
+  </table>
+  </div>
 </div>
